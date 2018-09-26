@@ -9,10 +9,10 @@ baseurl: '/justiandre.github.io'
 author:
   name: 'André Justi'
   email: justi.andre@gmail.com
-  twitter_username: joshgerdes
-  facebook_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  linkedin_username:  andrejusti
+  github_username:  justiandre
+  slideshare_username: AndrJusti
+  instagram_username: justi.andre
 
 defaults:
   -
