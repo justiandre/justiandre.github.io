@@ -21,6 +21,16 @@
           <nav class="cover-navigation navigation--social">
             <ul class="navigation">
 
+              {% if site.author.email %}
+              <!-- Email -->
+              <li class="navigation__item">
+                <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
+                  <i class="icon icon-mail"></i>
+                  <span class="label">Email</span>
+                </a>
+              </li>
+            {% endif %}
+
             {% if site.author.twitter_username %}
               <!-- Twitter -->
               <li class="navigation__item">
@@ -61,23 +71,27 @@
               </li>
             {% endif %}
 
-            {% if site.author.email %}
-              <!-- Email -->
-              <li class="navigation__item">
-                <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
-                  <i class="icon icon-mail"></i>
-                  <span class="label">Email</span>
-                </a>
-              </li>
-            {% endif %}
+            {% if site.author.slideshare_username %}
+    <!-- SlideShare -->
+    <li class="navigation__item">
+    <a href="https://www.slideshare.net/{{ site.author.slideshare_username }}" title="{{ site.author.slideshare_username }} on slideshare" target="_blank">
+        <i class="icon icon-social-stumbleupon"></i>
+        <span class="label">SlideShare</span>
+    </a>
+    </li>
+{% endif %}
 
-            <!-- RSS -->
-            <li class="navigation__item">
-              <a href="{{ site.baseurl }}/feed.xml" title="Subscribe" target="_blank">
-                <i class="icon icon-rss"></i>
-                <span class="label">RSS</span>
-              </a>
-            </li>
+{% if site.author.instagram_username %}
+    <!-- instagram -->
+    <li class="navigation__item">
+    <a href="https://www.instagram.com/{{ site.author.instagram_username }}" title="{{ site.author.instagram_username }} on instagram" target="_blank">
+        <i class="icon icon-social-instagram"></i>
+        <span class="label">Instagram</span>
+    </a>
+    </li>
+{% endif %}
+
+
 
             </ul>
           </nav>
